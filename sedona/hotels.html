@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hotels</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="js/script.js"></script>
+  	<script>
+  		$( function() {
+    		$( "#slider-range" ).slider({
+      			range: true,
+      			min: 0,
+      			max: 4000,
+      			values: [ 0, 3000 ],
+      			slide: function( event, ui ) {
+        			$( "#amount" ).val( "от " + ui.values[ 0 ]);
+        			$( "#amount1" ).val( "до " + ui.values[ 1 ]);
+      			}
+    	});
+    $( "#amount" ).val( "от " + $( "#slider-range" ).slider( "values", 0 ));
+    $( "#amount1" ).val( "до " + $( "#slider-range" ).slider( "values", 1 ));
+  } );
+  </script>
+</head>
+<body>
+	<header class="container">
+        <nav class="main-navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Информация</a>
+                </li>
+                <li>
+                    <a href="photo.html">Фото и видео</a>
+                </li>
+                <li>
+                    <a href="#">Карта штата</a>
+                </li>
+                <li class="navigation-link">
+                    <a href="#">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo"><img src="img/logo.png" alt="logo" width="138" height="70"></div>
+    </header>
+    <main class="container">
+    	<div class="filter"> 
+    		<form class="form-filter">
+    			<div class="form-infrastructure">
+    				<h2>Инфраструктура:</h2>
+    				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бассейн</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="park"><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Парковка</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="wifi"><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бассейн</label><br>
+    			</div>
+    			<div class="form-house">
+    				<h2>Тип жилья:</h2>
+    				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Гостиница</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="park" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мотель</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="wifi" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Аппартаменты</label><br>
+    			</div>
+    			
+    			<div class="form-cost">
+    				<h2>Стоимость в сутки (Р):</h2>
+    				<input type="text" name="start" id="amount" readonly ><input type="text" name="end" id="amount1" readonly >
+    				<div id="slider-range"></div>
+    				<button type="submit">Показать</button>
+    			</div>
+    		</form>
+		</div>
+		<div class="sorting">
+			<div class="sorting-number">
+				Найдено: 3
+			</div>
+			<div class="sorting-items">
+				<span>Сортировка:</span>
+				<a class="active">По цене</a>
+				<a>По типу</a>
+				<a>По рейтингу</a>
+			</div>
+			<div class="sorting-increase"><a>&#9650;</a><a class="active">&#9660;</a></div>
+		</div>
+		<div class="hotels">
+			<section>
+				<div class="hotels-item"><img src="img/amara.jpg" width="135" height="90" alt="Amara Hotel"></div>
+				<div class="hotels-item">
+					<h2>Amara Resort & Spa</h2>
+					<div><span>Гостиница</span><br><button class="btn-hotel" type="button">Подробнее</button></div>
+					<div><span>от 3500 Р.</span><br><button class="btn-book" type="button">Забронировать</button></div>
+					
+				</div>
+				<div class="hotels-item">
+					<span>&#9733;&#9733;&#9733;&#9733;</span>
+					<p>Рейтинг: 8,5</p>
+				</div>
+			</section>
+			<section>
+				<div class="hotels-item"><img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn"></div>
+				<div class="hotels-item">
+					<h2>Desert Quail Inn</h2>
+					<div><span>Мотель</span><br><button class="btn-hotel" type="button">Подробнее</button></div>
+					<div><span>от 2000 Р.</span><br><button class="btn-book" type="button">Забронировать</button></div>
+				</div>
+				<div class="hotels-item">
+					<span>&#9733;&#9733;</span>
+					<p>Рейтинг: 8,9</p>
+				</div>
+			</section>
+			<section>
+				<div class="hotels-item"><img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo"></div>
+				<div class="hotels-item">
+					<h2>Villas at Poco Diablo</h2>
+					<div><span>Аппартаменты</span><br><button class="btn-hotel" type="button">Подробнее</button></div>
+					<div><span>от 4000 Р.</span><br><button class="btn-book" type="button">Забронировать</button></div>
+				</div>
+				<div class="hotels-item">
+					<span>&#9733;&#9733;&#9733;</span>
+					<p>Рейтинг: 9,2</p>
+				</div>
+			</section>
+		</div>
+    </main>
+    <footer class="footer-hotels">
+    	<div class="container clearfix">
+    		<section class="footer-hashtag"><span>#VISITSEDONA</span></section>
+        	<section class="footer-social">
+        		<a class="social-btn social-btn-tw" href="#">VK</a>
+				<a class="social-btn social-btn-fb" href="#">FB</a>
+				<a class="social-btn social-btn-youtube" href="#">IN</a>
+        	</section>
+        	<section class="footer-copyright">
+        		<p>Website BY&nbsp;	&nbsp;</p><a href="https://htmlacademy.ru"></a>
+        	</section>
+        </div>
+    </footer>
+</body>
+</html>
