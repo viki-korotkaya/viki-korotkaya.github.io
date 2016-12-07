@@ -6,7 +6,7 @@
     <title>Sedona</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +63,7 @@
 			<section class="advantage">
 				<div class="advantage-img"><img src="img/gallery-2.jpg" alt="view" width="512" height="256"></div>
 				<div class="advantage-text">
-					<h2 class="advantage-title">Там есть мост дьявола</h2>
+					<h2 class="advantage-title">Там есть <br>мост дьявола</h2>
 					<p>&mdash; №2 &mdash;</p>
 					<p>Да, по нему можно пройти! Если, конечно, Вы осмелитесь</p>
 				</div>
@@ -87,9 +87,30 @@
 			</div>
 		</article>
 		<div class="form">
-			<h2>Заинтеросовались?</h2>
+			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-			<button class="btn" type="button" onclick="openForm()">Поиск гостинницы в Седоне</button>
+			
+
+		<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+		<button class="btn" type="button" onclick="openForm()">Поиск гостинницы в Седоне</button>
+		<div class="modal-content">
+			<label>Дата заезда: </label><input class="arrival-date" type="text" name="arrival"><br>
+			<label>Дата выезда: </label><input class="departure-date" type="text" name="departure"><br>
+			<label class="adult">Взрослые: </label>
+			<div class="count adult">
+				<input class="adult-number" type="text" name="adult" value="0">
+				<div class="count-minus">-</div>
+				<div class="count-plus">+</div>
+			</div>
+			<label class="child">Дети: </label>
+			<div class="count child">
+				<input class="child-number" type="text" name="child" value="0">
+				<div class="count-minus">-</div>
+				<div class="count-plus">+</div>
+			</div>
+			<button class="modal-close" type="submit">Найти</button>
+		</form>
+	</div>
 		</div>
 		<div class="map">
 			<img src="img/map.png" width="768" height="593" alt="map">
@@ -108,25 +129,8 @@
         	</section>
         </div>
     </footer>
-	<div class="modal-content">
-		<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-			<label>Дата заезда: </label><input class="arrival-date" type="text" name="arrival"><br>
-			<label>Дата выезда: </label><input class="departure-date" type="text" name="departure"><br>
-			<label class="adult">Взрослые: </label>
-			<div class="count adult">
-				<input class="adult-number" type="text" name="adult" value="0">
-				<div class="count-minus">-</div>
-				<div class="count-plus">+</div>
-			</div>
-			<label class="child">Дети: </label>
-			<div class="count child">
-				<input class="child-number" type="text" name="child" value="0">
-				<div class="count-minus">-</div>
-				<div class="count-plus">+</div>
-			</div>
-			<button class="modal-close" type="submit">Найти</button>
-		</form>
-	</div>
+	
+	<div class="modal-overlay"></div>
 	<script src="js/script.js"></script>
 </body>
 
