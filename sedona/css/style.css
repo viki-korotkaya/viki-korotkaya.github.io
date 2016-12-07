@@ -195,6 +195,7 @@ section.item {
     text-align: center;
     background-color: #eeeeee;
     padding: 30px 45px;
+    height: 256px;
 }
 .form {
 	padding-top: 55px;
