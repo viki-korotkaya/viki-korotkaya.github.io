@@ -5,6 +5,7 @@
 	<title>Hotels</title>
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+	<!--Скрипты не забывай в конце подключать :)-->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   	
@@ -37,12 +38,14 @@
     		<form class="form-filter">
     			<div class="form-infrastructure">
     				<h2>Инфраструктура:</h2>
+					<!--Не не не, так дело не пойдет ! "мусорные" пробелы здесь не нужно, отцентрируй надпись через CSS-->
     				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бассейн</label><br><br>
     				<label class="form-checkbox"><input type="checkbox" name="park"><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Парковка</label><br><br>
     				<label class="form-checkbox"><input type="checkbox" name="wifi"><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бассейн</label><br>
     			</div>
     			<div class="form-house">
     				<h2>Тип жилья:</h2>
+					<!-- Аналогично. Никаких мусорных пробелов-->
     				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Гостиница</label><br><br>
     				<label class="form-checkbox"><input type="checkbox" name="park" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мотель</label><br><br>
     				<label class="form-checkbox"><input type="checkbox" name="wifi" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Аппартаменты</label><br>
