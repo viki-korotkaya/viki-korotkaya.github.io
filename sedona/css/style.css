@@ -334,7 +334,7 @@ section.item {
 	float: right;
 	width: 33.3%;
 	vertical-align: top;
-	text-align: left;
+	text-align: center;
 } 
 .footer-copyright p {
 	display: inline-block;
