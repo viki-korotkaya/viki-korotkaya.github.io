@@ -5,12 +5,7 @@
 	<title>Hotels</title>
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  	
-  	<script src="js/script_slider.js">
-  		
-  </script>
+   
 </head>
 <body>
 	<header class="container">
@@ -34,18 +29,18 @@
     </header>
     <main class="container">
     	<div class="filter"> 
-    		<form class="form-filter">
+    		<form class="form-filter clearfix">
     			<div class="form-infrastructure">
     				<h2>Инфраструктура:</h2>
-    				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бассейн</label><br><br>
-    				<label class="form-checkbox"><input type="checkbox" name="park"><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Парковка</label><br><br>
-    				<label class="form-checkbox"><input type="checkbox" name="wifi"><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Бассейн</label><br>
+    				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>Бассейн</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="park"><span class="checkbox-indicator"></span>Парковка</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="wifi"><span class="checkbox-indicator"></span>Wi-Fi</label><br>
     			</div>
     			<div class="form-house">
     				<h2>Тип жилья:</h2>
-    				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Гостиница</label><br><br>
-    				<label class="form-checkbox"><input type="checkbox" name="park" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мотель</label><br><br>
-    				<label class="form-checkbox"><input type="checkbox" name="wifi" checked><span class="checkbox-indicator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Аппартаменты</label><br>
+    				<label class="form-checkbox"><input type="checkbox" name="pool" checked><span class="checkbox-indicator"></span>Гостиница</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="park" checked><span class="checkbox-indicator"></span>Мотель</label><br><br>
+    				<label class="form-checkbox"><input type="checkbox" name="wifi" checked><span class="checkbox-indicator"></span>Аппартаменты</label><br>
     			</div>
     			
     			<div class="form-cost">
@@ -56,7 +51,7 @@
     			</div>
     		</form>
 		</div>
-		<div class="sorting">
+		<div class="sorting clearfix">
 			<div class="sorting-number">
 				Найдено: 3
 			</div>
@@ -121,5 +116,8 @@
         	</section>
         </div>
     </footer>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script_slider.js"></script>
 </body>
 </html>
