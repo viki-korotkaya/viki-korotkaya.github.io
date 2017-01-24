@@ -415,6 +415,7 @@ section.item {
 	margin-left: 10px;
 	padding: 10px 40px 10px 20px;
 	border: 1px solid #ebebeb;
+	cursor: pointer;
 }
 .modal-content .departure-date {
 	width: 335px;
@@ -422,6 +423,7 @@ section.item {
 	margin-left: 10px;
 	padding: 10px 40px 10px 20px;
 	border: 1px solid #ebebeb;
+	cursor: pointer;
 }
 .search-form input.arrival-date {
 	background-image: url("../img/sprite.png");
